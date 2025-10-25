@@ -26,7 +26,10 @@ Money_Illusion_Retirement/
 │   ├── example2_consumption_path.py
 │   ├── example3_investment_strategy.py
 │   ├── example4_comprehensive.py
-│   └── example5_heatmap.py
+│   ├── example5_heatmap.py
+│   └── example6_extension.py    # Demonstrates framework extensibility
+├── tests/                        # Validation tests
+│   └── validate.py              # Core functionality validation
 ├── outputs/                      # Generated plots (created automatically)
 ├── requirements.txt             # Python dependencies
 └── README.md                    # This file
@@ -49,7 +52,7 @@ pip install -r requirements.txt
 
 ### Running Examples
 
-The `examples/` directory contains five demonstration scripts:
+The `examples/` directory contains six demonstration scripts:
 
 ```bash
 # Example 1: Retirement boundary for different risk aversion levels
@@ -66,9 +69,19 @@ python examples/example4_comprehensive.py
 
 # Example 5: Two-parameter heatmap analysis
 python examples/example5_heatmap.py
+
+# Example 6: Framework extension demonstration (custom metrics and analyses)
+python examples/example6_extension.py
 ```
 
 All examples will generate plots in the `outputs/` directory.
+
+### Running Tests
+
+```bash
+# Run validation tests to verify core functionality
+python tests/validate.py
+```
 
 ### Basic Usage
 
